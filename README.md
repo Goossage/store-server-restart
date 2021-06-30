@@ -1,2 +1,2 @@
-python manage.py loaddata products/categories.json
-python manage.py loaddata products/products.json
+python manage.py loaddata products/fixtures/categories.json
+python manage.py loaddata products/fixtures/products.json
