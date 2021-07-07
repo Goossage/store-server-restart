@@ -28,7 +28,7 @@ def register(request):
             register_form.save()
             return HttpResponseRedirect(reverse('users:login'))
         else:
-            print(register_form.errors)
+            print(register_form.non_field_errors)
     else:
         register_form = UserRegistrationForm()
 
