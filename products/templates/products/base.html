@@ -37,8 +37,8 @@
                 </li>
                 {% if user %}
                     <li class="nav-item">
-                        <a class="nav-link" href="auth/profile.html">{{ user }}
-                            <i class="fas fa-user-circle"></i>
+                        <a class="nav-link" href={% url "users:profile" %}>
+                            <i class="fas fa-user-circle"> {{ user }} </i>
                         </a>
                     </li>
                     <li class="nav-item">
