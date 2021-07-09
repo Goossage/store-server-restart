@@ -28,3 +28,6 @@ class Basket(models.Model):
 
     def __str__(self):
         return f' {self.product} | {self.user} '
+
+    def sum(self):
+        return self.quantity * self.product.price
