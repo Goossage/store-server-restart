@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'products',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -104,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -125,8 +127,9 @@ STATICFILES_DIRS = (
 )
 
 REPOSITORY_ROOT = os.path.dirname(BASE_DIR)
-
 STATIC_ROOT = os.path.join(REPOSITORY_ROOT, 'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(REPOSITORY_ROOT, 'media/')
+
+AUTH_USER_MODEL = 'users.User'
